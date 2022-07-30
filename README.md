@@ -8,7 +8,7 @@ Micorsoft developement tools bucket for [Scoop](https://scoop.sh), the Windows c
 How do I install these manifests?
 ---------------------------------
 
-To add this bucket, run `scoop bucket add <bucketname> https://github.com/<username>/<bucketname>`. To install, do `scoop install <manifest>`.
+To add this bucket, run `scoop bucket add vsbuildtools https://github.com/tree-s/vsbuildtools`. To install, do `scoop install <manifest>`.
 
 How do I contribute new manifests?
 ----------------------------------
