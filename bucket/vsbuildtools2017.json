@@ -1,10 +1,10 @@
 {
-    "version": "15.9.49",
+    "version": "15.9.50",
     "description": "Microsoft Visual Studio Build Tools 2017",
     "homepage": "https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2017",
     "license": "https://visualstudio.microsoft.com/license-terms/mlt552233/",
     "url": "https://aka.ms/vs/15/release/vs_buildtools.exe",
-    "hash": "67d97e23f2593560cd30157248ab516e87a99b73e148d5dbadcabf517514311a",
+    "hash": "6702bf310b6d5a3f9fba9333f60f9c053227bf57df46b7a661e431181cccf72b",
     "installer": {
         "script": "Invoke-ExternalCommand -FilePath \"$dir\\vs_buildtools.exe\" -Args @('--installPath', \"$dir\\vs\\\", '--add Microsoft.VisualStudio.Workload.MSBuildTools --add Microsoft.VisualStudio.Workload.VCTools --add Microsoft.VisualStudio.Component.VC.Tools.x86.x64 --quiet --norestart --wait') -RunAs | Out-Null"
     },
