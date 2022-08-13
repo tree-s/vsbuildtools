@@ -4,7 +4,7 @@
     "homepage": "https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2022",
     "license": "https://visualstudio.microsoft.com/license-terms/vs2022-ga-diagnosticbuildtools/",
     "url": "https://aka.ms/vs/17/release/vs_buildtools.exe",
-    "hash": "46BA7CE5FB0AA6A34245A5F5947AD3D7C9AE01F515AB6959A147B470463BC005",
+    "hash": "46ba7ce5fb0aa6a34245a5f5947ad3d7c9ae01f515ab6959a147b470463bc005",
     "installer": {
         "script": "Invoke-ExternalCommand -FilePath \"$dir\\vs_buildtools.exe\" -Args @('--installPath', \"$dir\\vs\\\", '--add Microsoft.VisualStudio.Workload.MSBuildTools --add Microsoft.VisualStudio.Workload.VCTools --add Microsoft.VisualStudio.Component.VC.Tools.x86.x64 --quiet --norestart --wait') -RunAs | Out-Null"
     },
