@@ -1,0 +1,32 @@
+{
+    "version": "17.3.0",
+    "description": "Microsoft Visual Studio Build Tools 2022",
+    "homepage": "https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2022",
+    "license": "https://visualstudio.microsoft.com/license-terms/vs2022-ga-diagnosticbuildtools/",
+    "url": "https://aka.ms/vs/17/release/vs_buildtools.exe",
+    "hash": "46BA7CE5FB0AA6A34245A5F5947AD3D7C9AE01F515AB6959A147B470463BC005",
+    "installer": {
+        "script": "Invoke-ExternalCommand -FilePath \"$dir\\vs_buildtools.exe\" -Args @('--installPath', \"$dir\\vs\\\", '--add Microsoft.VisualStudio.Workload.MSBuildTools --add Microsoft.VisualStudio.Workload.VCTools --add Microsoft.VisualStudio.Component.VC.Tools.x86.x64 --quiet --norestart --wait') -RunAs | Out-Null"
+    },
+    "uninstaller": {
+        "script": "Invoke-ExternalCommand -FilePath \"$dir\\vs_buildtools.exe\" -Args @('uninstall', '--installPath', \"$dir\\vs\\\", '--quiet', '--norestart', '--wait') -RunAs | Out-Null"
+    },
+    "env_add_path": [
+        "vs\\Common7\\Tools",
+        "vs\\Common7\\IDE",
+        "vs\\MSBuild\\Current\\bin",
+        "vs\\VC\\Auxiliary\\Build"
+    ],
+    "bin": [
+        "vs\\VC\\Auxiliary\\Build\\vcvars64.bat",
+        "vs\\VC\\Auxiliary\\Build\\vcvars32.bat",
+        "vs\\VC\\Auxiliary\\Build\\vcvarsall.bat"
+    ],
+    "checkver": {
+        "url": "https://docs.microsoft.com/en-us/visualstudio/releases/2022/release-notes",
+        "regex": "> Visual Studio 2022 version ([\\d.]+)</h2>"
+    },
+    "autoupdate": {
+        "url": "https://aka.ms/vs/17/release/vs_buildtools.exe"
+    }
+}
