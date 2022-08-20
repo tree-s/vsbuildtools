@@ -1,7 +1,7 @@
 # Scoop Bucket Microsoft Visual Studio Build Tools
 
 <!-- Uncomment the following line after replacing placeholders -->
-<!-- [![Tests](https://github.com/<username>/<bucketname>/actions/workflows/ci.yml/badge.svg)](https://github.com/<username>/<bucketname>/actions/workflows/ci.yml) [![Excavator](https://github.com/<username>/<bucketname>/actions/workflows/excavator.yml/badge.svg)](https://github.com/<username>/<bucketname>/actions/workflows/excavator.yml) -->
+[![Tests](https://github.com/tree-s/vsbuildtools/actions/workflows/ci.yml/badge.svg)](https://github.com/tree-s/vsbuildtools/actions/workflows/ci.yml) [![Excavator](https://github.com/tree-s/vsbuildtools/actions/workflows/excavator.yml/badge.svg)](https://github.com/tree-s/vsbuildtools/actions/workflows/excavator.yml)
 
 Micorsoft developement tools bucket for [Scoop](https://scoop.sh), the Windows command-line installer.
 
