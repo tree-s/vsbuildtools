@@ -6,10 +6,10 @@
     "url": "https://aka.ms/vs/15/release/vs_buildtools.exe",
     "hash": "6702bf310b6d5a3f9fba9333f60f9c053227bf57df46b7a661e431181cccf72b",
     "installer": {
-        "script": "Invoke-ExternalCommand -FilePath \"$dir\\vs_buildtools.exe\" -Args @('--installPath', \"$dir\\vs\\\", '--add Microsoft.VisualStudio.Workload.MSBuildTools --add Microsoft.VisualStudio.Workload.VCTools --add Microsoft.VisualStudio.Component.VC.Tools.x86.x64 --quiet --norestart --wait') -RunAs | Out-Null"
+        "script": "Start-Process -FilePath \"$dir\\vs_buildtools.exe\" -ArgumentList \"--installPath $dir\\vs\\ --add Microsoft.VisualStudio.Workload.MSBuildTools --add Microsoft.VisualStudio.Workload.VCTools --add Microsoft.VisualStudio.Component.VC.Tools.x86.x64 --quiet --norestart\" -Wait"
     },
     "uninstaller": {
-        "script": "Invoke-ExternalCommand -FilePath \"$dir\\vs_buildtools.exe\" -Args @('uninstall', '--installPath', \"$dir\\vs\\\", '--quiet', '--norestart', '--wait') -RunAs | Out-Null"
+        "script": "Start-Process -FilePath \"$dir\\vs_buildtools.exe\" -ArgumentList \"uninstall --installPath $dir\\vs\\ --quiet --norestart\" -Wait"
     },
     "env_add_path": [
         "vs\\Common7\\Tools",
