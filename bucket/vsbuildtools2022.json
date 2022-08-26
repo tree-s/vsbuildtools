@@ -14,7 +14,7 @@
     "env_add_path": [
         "vs\\Common7\\Tools",
         "vs\\Common7\\IDE",
-        "vs\\MSBuild\\Current\\bin",
+        "vs\\MSBuild\\Current\\Bin",
         "vs\\VC\\Auxiliary\\Build"
     ],
     "bin": [
