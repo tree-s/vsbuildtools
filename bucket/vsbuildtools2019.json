@@ -1,10 +1,10 @@
 {
-    "version": "16.11.21",
+    "version": "16.11.22",
     "description": "Microsoft Visual Studio Build Tools 2019",
     "homepage": "https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2019",
     "license": "https://visualstudio.microsoft.com/license-terms/mlt031519/",
     "url": "https://aka.ms/vs/16/release/vs_buildtools.exe",
-    "hash": "0fd65b3cdccf57b0a2133ba703731bccf9333c293c4918fc42ff2881b9710176",
+    "hash": "25b7e25e826bebccc798f6189736c342a9fb4461cd1b6306aee161a556517af0",
     "installer": {
         "script": "Start-Process -FilePath \"$dir\\vs_buildtools.exe\" -ArgumentList \"--installPath $dir\\vs\\ --add Microsoft.VisualStudio.Workload.MSBuildTools --add Microsoft.VisualStudio.Workload.VCTools --add Microsoft.VisualStudio.Component.VC.Tools.x86.x64 --quiet --norestart\" -Wait"
     },
