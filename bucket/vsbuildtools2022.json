@@ -1,10 +1,10 @@
 {
-    "version": "17.4.3",
+    "version": "17.4.4",
     "description": "Microsoft Visual Studio Build Tools 2022",
     "homepage": "https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2022",
     "license": "https://visualstudio.microsoft.com/license-terms/vs2022-ga-diagnosticbuildtools/",
     "url": "https://aka.ms/vs/17/release/vs_buildtools.exe",
-    "hash": "6c72a5bb904001308a71aa7b3621e921f736c3cc17d47ad7d3322c77c7d38b05",
+    "hash": "d7293c5775ad824c05ee99d071d5262da3e7653d39f3ba8a28fb2917af7c041a",
     "installer": {
         "script": "Start-Process -FilePath \"$dir\\vs_buildtools.exe\" -ArgumentList \"--installPath $dir\\vs\\ --add Microsoft.VisualStudio.Workload.MSBuildTools --add Microsoft.VisualStudio.Workload.VCTools --add Microsoft.VisualStudio.Component.VC.Tools.x86.x64 --quiet --norestart\" -Wait"
     },
